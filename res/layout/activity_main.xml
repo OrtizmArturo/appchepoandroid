@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/relativeLayoutView"
+    android:background="#00cc00"
+    tools:context=".MainActivity" >
+    
+    <ImageView android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:scaleType="fitXY"
+        />    
+        
+    <ImageView android:id="@+id/imageChepo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/contenido1"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:scaleType="fitXY"
+        />    
+    
+  <LinearLayout android:id="@+id/buttonLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal"
+     >
+      
+  <Button android:id="@+id/buttonNo" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:onClick="buttonNoPressed"
+        android:text="@string/buttonNoTitle" />
+        
+   <Button android:id="@+id/buttonYes" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   	    android:paddingLeft="@dimen/activity_horizontal_margin"
+   	    android:layout_weight="1"
+   	    android:onClick="buttonYesPressed"
+        android:text="@string/buttonYesTitle" />
+ 
+</LinearLayout>  
+
+  
+   <RelativeLayout android:id="@+id/editTextLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:visibility="invisible"
+    android:background="#000000"
+     >
+
+    <ImageView android:id="@+id/commentBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen11"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:scaleType="fitStart"
+        />    
+       
+    <ImageView android:id="@+id/commentBack12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/commentBack"
+        android:src="@drawable/screen12"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:scaleType="fitEnd"
+        />    
+        
+  	<EditText android:id="@+id/textField"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginLeft="20dp"
+  	    android:layout_marginRight="20dp"
+  	    android:background="#bbffffff"
+  	    android:lines="5"	    
+  	    android:layout_alignBottom="@+id/commentBack12"
+  	    android:hint="@string/placeholderText"
+  	/>
+<!--     	    android:background="#bb000000" -->
+  	
+  	
+  	<Button android:id="@+id/buttonEnviar" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   	    android:gravity="center"
+   	    
+   	    android:layout_marginTop="10dp"
+   	    android:layout_below="@+id/commentBack12"
+   	    android:layout_centerHorizontal="true"
+   	    android:onClick="buttonEnviarPressed"
+        android:text="@string/buttonEnviarTitle" />
+    
+</RelativeLayout>  
+  
+
+  	    
+  	
+</RelativeLayout>
+
+
+
+        
+ 
